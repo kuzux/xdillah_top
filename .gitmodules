@@ -1,0 +1,6 @@
+[submodule "kernel"]
+	path = kernel
+	url = git@github.com:kuzux/xdillah_take2.git
+[submodule "libc"]
+	path = libc
+	url = git@github.com:kuzux/muslera.git

@@ -1,0 +1,8 @@
+
+sysroot/*
+initrd/*
+initrd.txt
+initrd.img
+*.dump
+.vscode
+*.sym
