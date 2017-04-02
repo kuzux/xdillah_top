@@ -3,7 +3,7 @@ PROJECTS="libc kernel"
 INITRD_PROJECTS=""
 
 export MAKE=${MAKE:-make}
-export HOST=${HOST:x86_64-elf}
+export HOST=x86_64-elf
  
 export AR=~/opt/cross/bin/${HOST}-ar
 export AS=~/opt/cross/bin/${HOST}-as
@@ -26,6 +26,9 @@ export CPPFLAGS=''
  
 # Configure the cross-compiler to use the desired system root.
 export CC="$CC --sysroot=$PWD/sysroot"
+
+# Configure to use the brew installed nasm, not the apple one on OSX
+export NASM="/usr/local/bin/nasm"
  
 # Work around that the -elf gcc targets doesn't have a system include directory
 # because configure received --without-headers rather than --with-sysroot.
